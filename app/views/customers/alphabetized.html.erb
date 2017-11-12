@@ -1,0 +1,5 @@
+<h1>Customers#alphabetized</h1>
+<p>Find me in app/views/customers/alphabetized.html.erb</p>
+
+<%= render partial: 'common/header', locals: {display_customers: false, display_alphabetized: true, display_missing_email: false} %>
+<%= render partial: 'customers/customer', collection: @customers_alphabetical, locals: {display_alphabetized: true} %>

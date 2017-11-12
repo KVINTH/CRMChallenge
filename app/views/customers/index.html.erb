@@ -1,0 +1,5 @@
+<h1>Customers#index</h1>
+<p>Find me in app/views/customers/index.html.erb</p>
+
+<%= render partial: 'common/header', locals: {display_customers: true, display_alphabetized: false, display_missing_email: false} %>
+<%= render partial: 'customers/customer', collection: @customers %>

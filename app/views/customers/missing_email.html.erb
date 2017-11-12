@@ -1,0 +1,5 @@
+<h1>Customers#missing_email</h1>
+<p>Find me in app/views/customers/missing_email.html.erb</p>
+
+<%= render partial: 'common/header', locals: {display_customers: false, display_alphabetized: false, display_missing_email: true} %>
+<%= render partial: 'customers/customer', collection: @customers_missing_email %>

@@ -1,5 +1,10 @@
-<h2><%= customer.full_name %></h2>
-<%= image_tag(customer.image) %>
-<p><%= customer.province %></p>
-<p><%= customer.phone_number %></p>
-<p><%= customer.email %></p>
+<div class="customer">
+    <h2><%= customer.full_name %></h2>
+    <div class="image_container">
+        <%= image_tag(customer.image) %>
+    </div>
+    
+    <p><strong>Province:</strong></p>
+    <p><%= customer.phone_number %></p>
+    <p><%= customer.email_address %></p>
+</div>

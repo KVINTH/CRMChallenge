@@ -1,0 +1,15 @@
+<header>
+    <nav>
+        <ul>
+            <% if (!display_customers) %>
+            <li><%= link_to 'All Customers', customers_path %></li>
+            <% end %>
+            <% if (!display_alphabetized) %>
+            <li><%= link_to 'Alphabetized', alphabetized_path %></li>
+            <% end %>
+            <% if (!display_missing_email)%>
+            <li><%= link_to 'Missing Emails', missing_emails_path %></li>
+            <% end %>
+        </ul>
+    </nav>
+</header>
